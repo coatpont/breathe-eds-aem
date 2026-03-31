@@ -290,3 +290,38 @@ main .section.highlight {
   margin: 0;
   padding: 40px 0;
 }
+
+/* Two-column layout: content left, screenshot carousel right */
+@media (width >= 900px) {
+  main:has(> .hero-container):has(> .carousel-container) {
+    display: grid;
+    grid-template-columns: 1fr 420px;
+    gap: 0 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 48px;
+  }
+
+  main:has(> .hero-container):has(> .carousel-container) > .section {
+    grid-column: 1;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  main:has(> .hero-container):has(> .carousel-container) > .section > div {
+    max-width: none;
+    padding: 0;
+  }
+
+  main:has(> .hero-container):has(> .carousel-container) > .carousel-container {
+    grid-column: 2;
+    grid-row: 1 / -1;
+    position: sticky;
+    top: var(--nav-height);
+    align-self: start;
+    height: calc(100vh - var(--nav-height));
+    margin: 0;
+    display: flex;
+    align-items: center;
+  }
+}

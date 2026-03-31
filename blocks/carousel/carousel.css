@@ -178,3 +178,25 @@
     height: 560px;
   }
 }
+
+/* Sidebar carousel in two-column layout */
+@media (width >= 900px) {
+  .carousel-container .carousel-wrapper {
+    width: 100%;
+  }
+
+  .carousel .carousel-slide {
+    min-height: unset;
+    padding: 20px 0;
+  }
+
+  .carousel .carousel-slide .carousel-slide-image img {
+    height: calc(100vh - var(--nav-height) - 160px);
+    max-height: 620px;
+  }
+
+  .carousel .carousel-navigation-buttons {
+    left: 8px;
+    right: 8px;
+  }
+}
