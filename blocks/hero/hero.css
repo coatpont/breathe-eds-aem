@@ -13,6 +13,14 @@
 .hero {
   position: relative;
   padding: 10px 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 16px;
+}
+
+/* Text row takes full width */
+.hero > div:first-child {
+  width: 100%;
 }
 
 /* Hide empty image row (row 1) */
@@ -20,7 +28,7 @@
   display: none;
 }
 
-/* Text row (row 2) */
+/* stylelint-disable-next-line no-descending-specificity */
 .hero > div > div {
   padding: 0;
   margin: 0;
@@ -42,10 +50,9 @@
   margin: 0 0 16px;
 }
 
-/* Store badge paragraphs - display inline so badges sit side by side */
-.hero p:has(a img) {
-  display: inline-block;
-  margin: 0 8px 0 0;
+/* Store badge paragraphs */
+.hero p:has(img) {
+  margin: 0;
   line-height: 0;
 }
 
