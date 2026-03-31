@@ -1,0 +1,14 @@
+{
+  "status": "success",
+  "url": "https://www.breathe-app.com/tr/",
+  "path": "tr",
+  "timestamp": "2026-03-31T15:35:05.268Z",
+  "title": "Breathe - Nefes Uygulamasi",
+  "template": "homepage",
+  "blocks": [
+    "hero",
+    "cards",
+    "cards",
+    "carousel"
+  ]
+}

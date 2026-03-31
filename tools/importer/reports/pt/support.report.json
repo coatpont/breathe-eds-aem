@@ -1,0 +1,11 @@
+{
+  "status": "success",
+  "url": "https://www.breathe-app.com/pt/support/",
+  "path": "pt/support",
+  "timestamp": "2026-03-25T16:18:38.052Z",
+  "title": "Apoie o Breathe",
+  "template": "support-page",
+  "blocks": [
+    "support-cards"
+  ]
+}

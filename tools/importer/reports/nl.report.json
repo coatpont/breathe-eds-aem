@@ -1,0 +1,14 @@
+{
+  "status": "success",
+  "url": "https://www.breathe-app.com/nl/",
+  "path": "nl",
+  "timestamp": "2026-03-31T15:34:35.714Z",
+  "title": "Breathe - Ademhalingsapp",
+  "template": "homepage",
+  "blocks": [
+    "hero",
+    "cards",
+    "cards",
+    "carousel"
+  ]
+}

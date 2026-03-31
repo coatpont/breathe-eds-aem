@@ -1,0 +1,11 @@
+{
+  "status": "success",
+  "url": "https://www.breathe-app.com/nl/support/",
+  "path": "nl/support",
+  "timestamp": "2026-03-25T16:18:28.775Z",
+  "title": "Steun Breathe",
+  "template": "support-page",
+  "blocks": [
+    "support-cards"
+  ]
+}

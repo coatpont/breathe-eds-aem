@@ -1,0 +1,14 @@
+{
+  "status": "success",
+  "url": "https://www.breathe-app.com/de/",
+  "path": "de",
+  "timestamp": "2026-03-31T15:34:03.261Z",
+  "title": "Breathe - Atem-App",
+  "template": "homepage",
+  "blocks": [
+    "hero",
+    "cards",
+    "cards",
+    "carousel"
+  ]
+}

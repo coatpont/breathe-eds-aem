@@ -1,75 +1,72 @@
 /*
- * Copyright 2020 Adobe. All rights reserved.
- * This file is licensed to you under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License. You may obtain a copy
- * of the License at http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software distributed under
- * the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR REPRESENTATIONS
- * OF ANY KIND, either express or implied. See the License for the specific language
- * governing permissions and limitations under the License.
+ * Breathe App - Edge Delivery Services
+ * Design system migrated from https://www.breathe-app.com/
  */
 
 :root {
   /* colors */
-  --background-color: white;
-  --light-color: #f8f8f8;
-  --dark-color: #505050;
-  --text-color: #131313;
-  --link-color: #3b63fb;
-  --link-hover-color: #1d3ecf;
-  --overlay-background-color:lightgrey;
+  --background-color: #0b1627;
+  --light-color: rgb(15 31 52 / 86%);
+  --dark-color: #0a1220;
+  --text-color: #eef6ff;
+  --text-muted: rgb(255 255 255 / 72%);
+  --link-color: #eef6ff;
+  --link-hover-color: #4fc3f7;
+  --overlay-background-color: rgb(15 31 52 / 90%);
+
+  /* card/surface colors */
+  --surface-color: rgb(15 31 52 / 86%);
+  --surface-border: 1px solid rgb(255 255 255 / 12%);
+  --surface-radius: 20px;
+  --surface-shadow: 0 24px 60px rgb(4 10 20 / 40%);
 
   /* fonts */
-  --body-font-family: roboto, roboto-fallback, sans-serif;
-  --heading-font-family: roboto-condensed, roboto-condensed-fallback, sans-serif;
+  --body-font-family: 'Manrope', manrope-fallback, sans-serif;
+  --heading-font-family: 'Manrope', manrope-fallback, sans-serif;
 
   /* body sizes */
-  --body-font-size-m: 22px;
-  --body-font-size-s: 19px;
-  --body-font-size-xs: 17px;
+  --body-font-size-m: 16px;
+  --body-font-size-s: 15.2px;
+  --body-font-size-xs: 14px;
 
   /* heading sizes */
-  --heading-font-size-xxl: 55px;
-  --heading-font-size-xl: 44px;
-  --heading-font-size-l: 34px;
-  --heading-font-size-m: 27px;
-  --heading-font-size-s: 24px;
-  --heading-font-size-xs: 22px;
+  --heading-font-size-xxl: 32px;
+  --heading-font-size-xl: 24.8px;
+  --heading-font-size-l: 22.4px;
+  --heading-font-size-m: 20px;
+  --heading-font-size-s: 18px;
+  --heading-font-size-xs: 16px;
 
   /* nav heights */
   --nav-height: 64px;
   --breadcrumbs-height: 34px;
   --header-height: var(--nav-height);
+
+  /* spacing */
+  --spacing-xs: 4px;
+  --spacing-s: 8px;
+  --spacing-m: 16px;
+  --spacing-l: 24px;
+  --spacing-xl: 40px;
+  --spacing-xxl: 60px;
+  --section-padding: 40px 0;
+  --content-padding: 0 24px;
+  --content-max-width: 900px;
 }
 
-/* fallback fonts */
+/* fallback font */
 @font-face {
-  font-family: roboto-condensed-fallback;
-  size-adjust: 88.82%;
-  src: local('Arial');
-}
-
-@font-face {
-  font-family: roboto-fallback;
-  size-adjust: 99.529%;
-  src: local('Arial');
+  font-family: manrope-fallback;
+  size-adjust: 100%;
+  src: local('Trebuchet MS'), local('Arial');
 }
 
 @media (width >= 900px) {
   :root {
-    /* body sizes */
-    --body-font-size-m: 18px;
-    --body-font-size-s: 16px;
-    --body-font-size-xs: 14px;
-
-    /* heading sizes */
-    --heading-font-size-xxl: 45px;
-    --heading-font-size-xl: 36px;
-    --heading-font-size-l: 28px;
-    --heading-font-size-m: 22px;
-    --heading-font-size-s: 20px;
-    --heading-font-size-xs: 18px;
+    --heading-font-size-xxl: 40px;
+    --heading-font-size-xl: 28px;
+    --heading-font-size-l: 24px;
+    --content-padding: 0 48px;
   }
 }
 
@@ -81,6 +78,7 @@ body {
   font-family: var(--body-font-family);
   font-size: var(--body-font-size-m);
   line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
 }
 
 body.appear {
@@ -101,12 +99,6 @@ footer .footer[data-block-status="loaded"] {
   visibility: visible;
 }
 
-@media (width >= 900px) {
-  body[data-breadcrumbs] {
-    --header-height: calc(var(--nav-height) + var(--breadcrumbs-height));
-  }
-}
-
 h1,
 h2,
 h3,
@@ -116,9 +108,10 @@ h6 {
   margin-top: 0.8em;
   margin-bottom: 0.25em;
   font-family: var(--heading-font-family);
-  font-weight: 600;
-  line-height: 1.25;
+  font-weight: 700;
+  line-height: 1.6;
   scroll-margin: 40px;
+  color: var(--text-color);
 }
 
 h1 { font-size: var(--heading-font-size-xxl); }
@@ -136,6 +129,18 @@ pre,
 blockquote {
   margin-top: 0.8em;
   margin-bottom: 0.25em;
+  color: var(--text-muted);
+}
+
+ul,
+ol {
+  padding-left: 1.2em;
+}
+
+li {
+  margin-bottom: 0.4em;
+  font-size: var(--body-font-size-s);
+  color: var(--text-muted);
 }
 
 code,
@@ -167,11 +172,11 @@ a:any-link {
   color: var(--link-color);
   text-decoration: none;
   overflow-wrap: break-word;
+  transition: color 0.2s ease;
 }
 
 a:hover {
   color: var(--link-hover-color);
-  text-decoration: underline;
 }
 
 /* buttons */
@@ -190,19 +195,20 @@ button {
   line-height: 1.25;
   text-align: center;
   text-decoration: none;
-  background-color: var(--link-color);
+  background-color: var(--link-hover-color);
   color: var(--background-color);
   cursor: pointer;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  transition: background-color 0.2s ease, transform 0.15s ease;
 }
 
 a.button:hover,
 a.button:focus,
 button:hover,
 button:focus {
-  background-color: var(--link-hover-color);
+  background-color: #29b6f6;
   cursor: pointer;
 }
 
@@ -242,9 +248,9 @@ main > .section {
 }
 
 main > .section > div {
-  max-width: 1200px;
+  max-width: var(--content-max-width);
   margin: auto;
-  padding: 0 24px;
+  padding: var(--content-padding);
 }
 
 main > .section:first-of-type {
@@ -257,10 +263,30 @@ main > .section:first-of-type {
   }
 }
 
-/* section metadata */
+/* section metadata - midnight style */
+main .section.midnight {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: var(--section-padding);
+}
+
+main .section.midnight h1,
+main .section.midnight h2,
+main .section.midnight h3 {
+  color: var(--text-color);
+}
+
+main .section.midnight p,
+main .section.midnight li {
+  color: var(--text-muted);
+}
+
+/* section metadata - light style */
 main .section.light,
 main .section.highlight {
-  background-color: var(--light-color);
+  background-color: #f8f8f8;
+  color: #131313;
   margin: 0;
   padding: 40px 0;
 }

@@ -1,0 +1,10 @@
+{
+  "type": "xwalk",
+  "libraryUrl": "https://main--sta-xwalk-boilerplate--aemysites.aem.page/tools/sidekick/library.json",
+  "contentSourceUrl": "https://author-p190307-e1982421.adobeaemcloud.com",
+  "contentHostUrl": "author-p190307-e1982421.adobeaemcloud.com",
+  "aemSitePath": "/content/breathe-eds-aem",
+  "aemAssetsFolderPath": "/content/dam/breathe-eds-aem",
+  "aemSiteName": "breathe-eds-aem",
+  "aemSiteTitle": "Breathe on AEM and EDS"
+}

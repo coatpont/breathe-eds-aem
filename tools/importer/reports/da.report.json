@@ -1,0 +1,14 @@
+{
+  "status": "success",
+  "url": "https://www.breathe-app.com/da/",
+  "path": "da",
+  "timestamp": "2026-03-31T15:33:57.107Z",
+  "title": "Breathe - Vejrtræningsapp",
+  "template": "homepage",
+  "blocks": [
+    "hero",
+    "cards",
+    "cards",
+    "carousel"
+  ]
+}

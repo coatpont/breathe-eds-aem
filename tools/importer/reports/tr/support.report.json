@@ -1,0 +1,11 @@
+{
+  "status": "success",
+  "url": "https://www.breathe-app.com/tr/support/",
+  "path": "tr/support",
+  "timestamp": "2026-03-25T16:18:45.723Z",
+  "title": "Breathe'i destekleyin",
+  "template": "support-page",
+  "blocks": [
+    "support-cards"
+  ]
+}

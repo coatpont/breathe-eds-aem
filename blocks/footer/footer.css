@@ -1,20 +1,26 @@
+/*
+ * Footer Block - Breathe App
+ * Simple dark footer with muted text
+ */
+
 footer {
-  background-color: var(--light-color);
-  font-size: var(--body-font-size-xs);
+  background-color: transparent;
+  font-size: var(--body-font-size-s);
 }
 
 footer .footer > div {
   margin: auto;
-  max-width: 1200px;
-  padding: 40px 24px 24px;
+  max-width: var(--content-max-width);
+  padding: 36px 24px 46px;
 }
 
 footer .footer p {
   margin: 0;
+  color: var(--text-muted);
 }
 
 @media (width >= 900px) {
   footer .footer > div {
-    padding: 40px 32px 24px;
+    padding: 36px 32px 46px;
   }
 }

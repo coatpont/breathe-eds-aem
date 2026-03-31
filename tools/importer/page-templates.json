@@ -1,0 +1,221 @@
+{
+  "templates": [
+    {
+      "name": "homepage",
+      "urls": [
+        "https://www.breathe-app.com/",
+        "https://www.breathe-app.com/da/",
+        "https://www.breathe-app.com/de/",
+        "https://www.breathe-app.com/el/",
+        "https://www.breathe-app.com/es/",
+        "https://www.breathe-app.com/fi/",
+        "https://www.breathe-app.com/fr/",
+        "https://www.breathe-app.com/it/",
+        "https://www.breathe-app.com/ja/",
+        "https://www.breathe-app.com/nl/",
+        "https://www.breathe-app.com/no/",
+        "https://www.breathe-app.com/pl/",
+        "https://www.breathe-app.com/pt/",
+        "https://www.breathe-app.com/ro/",
+        "https://www.breathe-app.com/sv/",
+        "https://www.breathe-app.com/tr/",
+        "https://www.breathe-app.com/ar/",
+        "https://www.breathe-app.com/hi/",
+        "https://www.breathe-app.com/id/",
+        "https://www.breathe-app.com/ko/",
+        "https://www.breathe-app.com/ms/",
+        "https://www.breathe-app.com/ru/",
+        "https://www.breathe-app.com/th/",
+        "https://www.breathe-app.com/uk/",
+        "https://www.breathe-app.com/vi/",
+        "https://www.breathe-app.com/zh-Hans/",
+        "https://www.breathe-app.com/zh-Hant/"
+      ],
+      "description": "Main landing page with app overview, features, download links, and promotional content",
+      "blocks": [
+        {
+          "name": "hero",
+          "instances": [
+            "section.hero"
+          ]
+        },
+        {
+          "name": "cards",
+          "instances": [
+            ".background-grid",
+            ".rhythm-grid"
+          ]
+        },
+        {
+          "name": "carousel",
+          "instances": [
+            ".cap-carousel"
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "id": "hero-section",
+          "name": "Hero Section",
+          "selector": "section.hero",
+          "style": "midnight",
+          "blocks": [
+            "hero"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "capabilities-section",
+          "name": "Capabilities Section",
+          "selector": "div.section#capabilities",
+          "style": "midnight",
+          "blocks": [],
+          "defaultContent": [
+            ".section-head h2",
+            ".section-head p",
+            "ul.feature-list"
+          ]
+        },
+        {
+          "id": "backgrounds-section",
+          "name": "Backgrounds Section",
+          "selector": "div.section#backgrounds",
+          "style": "midnight",
+          "blocks": [
+            "cards"
+          ],
+          "defaultContent": [
+            "#backgrounds .section-head h2",
+            "#backgrounds .section-head p"
+          ]
+        },
+        {
+          "id": "rhythms-section",
+          "name": "Breathing Rhythms Section",
+          "selector": "div.section#rhythms",
+          "style": "midnight",
+          "blocks": [
+            "cards"
+          ],
+          "defaultContent": [
+            "#rhythms .section-head h2",
+            "#rhythms .section-head p"
+          ]
+        },
+        {
+          "id": "screenshots-section",
+          "name": "App Screenshots Section",
+          "selector": "aside.feature-rail",
+          "style": null,
+          "blocks": [
+            "carousel"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "footer-section",
+          "name": "Footer Section",
+          "selector": "footer.site-footer",
+          "style": null,
+          "blocks": [],
+          "defaultContent": [
+            "footer.site-footer div"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "privacy-page",
+      "urls": [
+        "https://www.breathe-app.com/privacy/",
+        "https://www.breathe-app.com/fr/privacy/",
+        "https://www.breathe-app.com/es/privacy/",
+        "https://www.breathe-app.com/de/privacy/",
+        "https://www.breathe-app.com/nl/privacy/",
+        "https://www.breathe-app.com/it/privacy/",
+        "https://www.breathe-app.com/pt/privacy/",
+        "https://www.breathe-app.com/ja/privacy/",
+        "https://www.breathe-app.com/tr/privacy/",
+        "https://www.breathe-app.com/ro/privacy/",
+        "https://www.breathe-app.com/pl/privacy/",
+        "https://www.breathe-app.com/el/privacy/",
+        "https://www.breathe-app.com/sv/privacy/",
+        "https://www.breathe-app.com/da/privacy/",
+        "https://www.breathe-app.com/no/privacy/",
+        "https://www.breathe-app.com/fi/privacy/",
+        "https://www.breathe-app.com/ar/privacy/",
+        "https://www.breathe-app.com/hi/privacy/",
+        "https://www.breathe-app.com/id/privacy/",
+        "https://www.breathe-app.com/ko/privacy/",
+        "https://www.breathe-app.com/ms/privacy/",
+        "https://www.breathe-app.com/ru/privacy/",
+        "https://www.breathe-app.com/th/privacy/",
+        "https://www.breathe-app.com/uk/privacy/",
+        "https://www.breathe-app.com/vi/privacy/",
+        "https://www.breathe-app.com/zh-Hans/privacy/",
+        "https://www.breathe-app.com/zh-Hant/privacy/"
+      ],
+      "description": "Privacy policy page with legal text about data collection and usage",
+      "blocks": [],
+      "sections": [
+        {
+          "id": "content-section",
+          "name": "Main Content",
+          "selector": "main section.section",
+          "style": null,
+          "blocks": [],
+          "defaultContent": [".section-head h1", ".section-head p", ".card.wide h2", ".card.wide ul.feature-list", ".card.wide p"]
+        }
+      ]
+    },
+    {
+      "name": "support-page",
+      "urls": [
+        "https://www.breathe-app.com/support/",
+        "https://www.breathe-app.com/fr/support/",
+        "https://www.breathe-app.com/es/support/",
+        "https://www.breathe-app.com/de/support/",
+        "https://www.breathe-app.com/nl/support/",
+        "https://www.breathe-app.com/it/support/",
+        "https://www.breathe-app.com/pt/support/",
+        "https://www.breathe-app.com/ja/support/",
+        "https://www.breathe-app.com/tr/support/",
+        "https://www.breathe-app.com/ro/support/",
+        "https://www.breathe-app.com/pl/support/",
+        "https://www.breathe-app.com/el/support/",
+        "https://www.breathe-app.com/sv/support/",
+        "https://www.breathe-app.com/da/support/",
+        "https://www.breathe-app.com/no/support/",
+        "https://www.breathe-app.com/fi/support/",
+        "https://www.breathe-app.com/ar/support/",
+        "https://www.breathe-app.com/hi/support/",
+        "https://www.breathe-app.com/id/support/",
+        "https://www.breathe-app.com/ko/support/",
+        "https://www.breathe-app.com/ms/support/",
+        "https://www.breathe-app.com/ru/support/",
+        "https://www.breathe-app.com/th/support/",
+        "https://www.breathe-app.com/uk/support/",
+        "https://www.breathe-app.com/vi/support/",
+        "https://www.breathe-app.com/zh-Hans/support/",
+        "https://www.breathe-app.com/zh-Hant/support/"
+      ],
+      "description": "Support and FAQ page with help content and contact information",
+      "blocks": [
+        {
+          "name": "support-cards",
+          "instances": [".support-grid"]
+        }
+      ],
+      "sections": [
+        {
+          "id": "content-section",
+          "name": "Main Content",
+          "selector": "main",
+          "style": null,
+          "blocks": ["support-cards"],
+          "defaultContent": [".support-page-head h1", ".support-page-head p"]
+        }
+      ]
+    }
+  ]
+}

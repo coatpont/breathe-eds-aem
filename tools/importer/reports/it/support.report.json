@@ -1,0 +1,11 @@
+{
+  "status": "success",
+  "url": "https://www.breathe-app.com/it/support/",
+  "path": "it/support",
+  "timestamp": "2026-03-25T16:18:33.534Z",
+  "title": "Sostieni Breathe",
+  "template": "support-page",
+  "blocks": [
+    "support-cards"
+  ]
+}

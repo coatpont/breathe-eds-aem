@@ -1,0 +1,14 @@
+{
+  "status": "success",
+  "url": "https://www.breathe-app.com/es/",
+  "path": "es",
+  "timestamp": "2026-03-31T15:34:13.662Z",
+  "title": "Breathe - Aplicación de respiración",
+  "template": "homepage",
+  "blocks": [
+    "hero",
+    "cards",
+    "cards",
+    "carousel"
+  ]
+}

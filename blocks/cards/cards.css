@@ -1,27 +1,155 @@
+/*
+ * Cards Block - Breathe App
+ * Dark surface cards with rounded corners
+ * Handles two patterns:
+ *   1. Image cards (backgrounds/rhythms): image + title + tag
+ *   2. Text cards (support): emoji + title + description + link
+ */
+
 .cards > ul {
   list-style: none;
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(257px, 1fr));
-  gap: 24px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
 }
 
 .cards > ul > li {
-  border: 1px solid #dadada;
-  background-color: var(--background-color);
+  background-color: var(--surface-color);
+  border-radius: var(--surface-radius);
+  overflow: hidden;
+  border: none;
 }
 
-.cards .cards-card-body {
-  margin: 16px;
+/* ========== Image Cards (has img in first cell) ========== */
+
+/* Image cell */
+.cards > ul > li:has(img) .cards-card-body:first-child {
+  line-height: 0;
+  padding: 0;
+  margin: 0;
 }
 
-.cards .cards-card-image {
+.cards > ul > li:has(img) .cards-card-body:first-child p {
+  margin: 0;
   line-height: 0;
 }
 
 .cards > ul > li img {
   width: 100%;
-  aspect-ratio: 4 / 3;
+  height: 160px;
   object-fit: cover;
+  display: block;
+}
+
+/* Meta cell (title + tag/description) */
+.cards > ul > li:has(img) .cards-card-body:last-child {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 16px 18px;
+  gap: 12px;
+  margin: 0;
+}
+
+.cards .cards-card-body h3 {
+  font-size: var(--body-font-size-m);
+  font-weight: 700;
+  color: var(--text-color);
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* Tag pill (Video/Image badge) */
+.cards > ul > li:has(img) .cards-card-body:last-child p {
+  font-size: 12.8px;
+  color: var(--text-muted);
+  background-color: rgb(15 31 52 / 80%);
+  border-radius: 999px;
+  padding: 4px 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.64px;
+  margin: 0;
+  white-space: nowrap;
+}
+
+/* ========== Text Cards (no image - support/contact style) ========== */
+
+.cards > ul > li:not(:has(img)) {
+  border: var(--surface-border);
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Emoji icon cell */
+.cards > ul > li:not(:has(img)) .cards-card-body:first-child {
+  margin: 0 0 4px;
+}
+
+.cards > ul > li:not(:has(img)) .cards-card-body:first-child p {
+  font-size: 26px;
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* Content cell */
+.cards > ul > li:not(:has(img)) .cards-card-body:last-child {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.cards > ul > li:not(:has(img)) .cards-card-body h2 {
+  font-size: var(--heading-font-size-m);
+  font-weight: 700;
+  color: var(--text-color);
+  margin: 0;
+}
+
+.cards > ul > li:not(:has(img)) .cards-card-body:last-child p {
+  font-size: var(--body-font-size-s);
+  color: var(--text-muted);
+  margin: 0;
+  line-height: 1.6;
+}
+
+.cards > ul > li:not(:has(img)) .cards-card-body a:any-link {
+  color: var(--link-hover-color);
+}
+
+/* ========== Responsive ========== */
+
+@media (width < 600px) {
+  .cards > ul {
+    gap: 16px;
+  }
+
+  .cards > ul > li img {
+    height: 120px;
+  }
+
+  .cards > ul > li:has(img) .cards-card-body:last-child {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+    padding: 10px 12px 14px;
+  }
+
+  /* Text cards stack on mobile */
+  .cards > ul:not(:has(img)) {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (width >= 900px) {
+  .cards > ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cards > ul > li img {
+    height: 200px;
+  }
 }

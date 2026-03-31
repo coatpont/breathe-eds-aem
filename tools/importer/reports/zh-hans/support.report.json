@@ -1,0 +1,11 @@
+{
+  "status": "success",
+  "url": "https://www.breathe-app.com/zh-Hans/support/",
+  "path": "zh-hans/support",
+  "timestamp": "2026-03-25T16:20:06.002Z",
+  "title": "支持 Breathe",
+  "template": "support-page",
+  "blocks": [
+    "support-cards"
+  ]
+}

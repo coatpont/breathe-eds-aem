@@ -1,0 +1,11 @@
+{
+  "status": "success",
+  "url": "https://www.breathe-app.com/ro/support/",
+  "path": "ro/support",
+  "timestamp": "2026-03-25T16:18:51.804Z",
+  "title": "Susține Breathe",
+  "template": "support-page",
+  "blocks": [
+    "support-cards"
+  ]
+}

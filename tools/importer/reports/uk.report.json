@@ -1,0 +1,14 @@
+{
+  "status": "success",
+  "url": "https://www.breathe-app.com/uk/",
+  "path": "uk",
+  "timestamp": "2026-03-31T15:35:43.182Z",
+  "title": "Breathe - Додаток для дихання",
+  "template": "homepage",
+  "blocks": [
+    "hero",
+    "cards",
+    "cards",
+    "carousel"
+  ]
+}

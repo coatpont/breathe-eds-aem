@@ -1,0 +1,14 @@
+{
+  "status": "success",
+  "url": "https://www.breathe-app.com/vi/",
+  "path": "vi",
+  "timestamp": "2026-03-31T15:35:49.582Z",
+  "title": "Breathe - Ứng dụng hít thở",
+  "template": "homepage",
+  "blocks": [
+    "hero",
+    "cards",
+    "cards",
+    "carousel"
+  ]
+}

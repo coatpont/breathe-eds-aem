@@ -1,0 +1,11 @@
+{
+  "status": "success",
+  "url": "https://www.breathe-app.com/ru/support/",
+  "path": "ru/support",
+  "timestamp": "2026-03-25T16:19:48.655Z",
+  "title": "Поддержать Breathe",
+  "template": "support-page",
+  "blocks": [
+    "support-cards"
+  ]
+}
